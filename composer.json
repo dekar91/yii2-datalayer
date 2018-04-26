@@ -1,8 +1,6 @@
 {
-  // package name
   "name": "dekar91/yii2-datalayer",
-
-  // package type
+  "minimum-stability": "stable",
   "type": "yii2-extension",
 
   "description": "The DataLayer integration for the Yii framework",
