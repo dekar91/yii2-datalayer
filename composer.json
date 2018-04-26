@@ -1,0 +1,26 @@
+{
+  // package name
+  "name": "dekar91/yii2-datalayer",
+
+  // package type
+  "type": "yii2-extension",
+
+  "description": "The DataLayer integration for the Yii framework",
+  "keywords": ["yii2", "datalayer", "helper"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Denis Karakoliuchka"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "yiisoft/yii2": "~2.0.0",
+    "bower-asset/jquery": ">=1.11.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "dekar91\\datalayer\\": ""
+    }
+  }
+}
