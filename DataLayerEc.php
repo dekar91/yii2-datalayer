@@ -1,7 +1,7 @@
 <?php
 
 
-namespace  dekar91\datalayers;
+namespace  dekar91\datalayer;
 
 
 use yii\base\Component;
