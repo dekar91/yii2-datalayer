@@ -37,12 +37,13 @@ class DataLayer extends Component implements \ArrayAccess
 
         $view = Yii::$app->view;
 
+        $jsOptions = json_encode($this->options);
         $assetBundle = DataLayerAsset::register($view);
 
         if($this->autoPublish)
             Yii::$app->view->on(View::EVENT_END_PAGE, [$this, 'renderEvent']);
 
-        $view->registerJs("DataLayer.init({$this->options});");
+        $view->registerJs("DataLayer.init({$jsOptions});");
     }
 
     public function offsetExists($offset)
