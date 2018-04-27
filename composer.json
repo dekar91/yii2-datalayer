@@ -1,6 +1,6 @@
 {
   "name": "dekar91/yii2-datalayer",
-  "minimum-stability": "stable",
+  "minimum-stability": "dev-master",
   "type": "yii2-extension",
   "description": "The DataLayer integration for the Yii framework",
   "keywords": ["yii2", "datalayer", "helper"],
