@@ -1,6 +1,5 @@
 {
   "name": "dekar91/yii2-datalayer",
-  "minimum-stability": "dev-master",
   "type": "yii2-extension",
   "description": "The DataLayer integration for the Yii framework",
   "keywords": ["yii2", "datalayer", "helper"],
@@ -14,6 +13,16 @@
     "php": ">=7.1",
     "yiisoft/yii2": "~2.0.0"
   },
+  "config": {
+  "process-timeout": 1800,
+  "fxp-asset":{
+    "installer-paths": {
+      "npm-asset-library": "vendor/npm",
+      "bower-asset-library": "vendor/bower-asset"
+      }
+    }
+  },
+
   "autoload": {
     "psr-4": {
       "dekar91\\datalayer\\": ""

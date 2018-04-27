@@ -15,6 +15,10 @@ use Yii;
 
 class DataLayer extends Component implements \ArrayAccess
 {
+    public $depends = [
+        'yii\web\JqueryAsset',
+    ];
+
     const EVENT_BEFORE_RENDER = self::class.'beforeRender';
     const EVENT_AFTER_RENDER = self::class.'afterRender';
     const EVENT_CHANGED = self::class.'changed';
