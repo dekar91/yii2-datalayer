@@ -1,7 +1,7 @@
 {
   "name": "dekar91/yii2-datalayer",
   "type": "yii2-extension",
-  "description": "The DataLayer integration for the Yii framework",
+  "description": "DataLayer integration for the Yii framework",
   "keywords": ["yii2", "datalayer", "helper"],
   "license": "MIT",
   "authors": [
@@ -9,6 +9,9 @@
       "name": "Denis Karakoliuchka"
     }
   ],
+  "support": {
+    "issue": "https://github.com/dekar91/yii2-datalayer/issues"
+  },
   "require": {
     "php": ">=7.1",
     "yiisoft/yii2": "~2.0.0"
