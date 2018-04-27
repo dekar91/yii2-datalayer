@@ -19,6 +19,8 @@ class DataLayer extends Component implements \ArrayAccess
         'yii\web\JqueryAsset',
     ];
 
+        public $options = [];
+
     const EVENT_BEFORE_RENDER = self::class.'beforeRender';
     const EVENT_AFTER_RENDER = self::class.'afterRender';
     const EVENT_CHANGED = self::class.'changed';
@@ -33,8 +35,14 @@ class DataLayer extends Component implements \ArrayAccess
     {
         parent::__construct($config);
 
+        $view = Yii::$app->view;
+
+        $assetBundle = DataLayerAsset::register($view);
+
         if($this->autoPublish)
             Yii::$app->view->on(View::EVENT_END_PAGE, [$this, 'renderEvent']);
+
+        $view->registerJs("DataLayer.init({$this->options});");
     }
 
     public function offsetExists($offset)

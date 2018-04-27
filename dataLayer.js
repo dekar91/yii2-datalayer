@@ -1,7 +1,6 @@
 DataLayer = {
-  init: function (config) {
-
-
+  init: function (options) {
+    console.log('test', options);
   },
 
   customHandler : function(e, event, data)
