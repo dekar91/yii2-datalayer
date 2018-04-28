@@ -7,11 +7,14 @@ Some Google enhanced e-commerce features are also available.
 ### Using composer
 Add following line in your require section:
 ```
-"dekar91\yii2-datalayer":"@stable"
+"dekar91/yii2-datalayer": "@stable"
+
 ```
-Then, register component in your application config:
+Then, register the component in your application config:
 ```
-'dataLayer' => 'dekar91\yii2-datalayer\DataLayer'
+        'dataLayer' => [
+            'class' => 'dekar91\datalayer\DataLayer',
+        ],
 ```
 
 ##Configuration
