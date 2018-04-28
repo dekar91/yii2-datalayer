@@ -21,7 +21,7 @@ var DataLayer = {
           DataLayer.attributeHandler(e[0], e[1], e.bindAttribute)
 
         } else {
-          DataLayer.customHandler(e[0], e[1], e[2])
+          DataLayer.customHandler(e[0], e[1], e[2]);
         }
       })
     }
