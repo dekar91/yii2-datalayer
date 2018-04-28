@@ -14,8 +14,9 @@ class DataLayerEc extends Component
      */
     private static $_dataLayer = null;
 
-    public function __construct(DataLayer $dataLayer)
+    public function __construct(DataLayer $dataLayer, $config = [])
     {
+        parent::__construct($config);
 
         self::$_dataLayer = $dataLayer;
 
