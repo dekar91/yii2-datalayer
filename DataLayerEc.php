@@ -48,7 +48,6 @@ class DataLayerEc extends Component
 
     public function addPromoImpression(array $product)
     {
-
         if (!isset($this->getRoot()['impressions']))
             $this->getRoot()['impressions'] = [];
 
@@ -125,6 +124,4 @@ class DataLayerEc extends Component
         $this->getRoot()['refund'] = $refund;
 
     }
-
-
 }
