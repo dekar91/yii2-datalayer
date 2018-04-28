@@ -38,7 +38,7 @@ class DataLayerEc extends Component
         if(isset($root['promoView'], $root['promoView']['promotions']))
             array_push($root['promoView']['promotions'], [$product]);
         else
-        $root['promoView'] = ['promotions' => [$product]];
+            $root['promoView'] = ['promotions' => [$product]];
     }
 
     public function addPromoClick(array $product, array $action = [])
@@ -48,9 +48,12 @@ class DataLayerEc extends Component
 
     public function addPromoImpression(array $product)
     {
-        $this->getRoot()['impressions'] = isset($this->getRoot()['impressions'])
-            ? [$product]
-            : $this->getRoot()['impressions'] + $product;
+
+        if(!isset($this->getRoot()['impressions']))
+            $this->getRoot()['impressions'] = [];
+
+        array_push($this->getRoot()['impressions'], $product);
+
     }
 
     private function pushEcAction(string $ecAction, array $items, string $event = null, array $userAction = [])
