@@ -28,7 +28,7 @@ class DataLayer extends Component implements \ArrayAccess
 
     private $_observedObjects = [];
     public $observers = [];
-    private $_defaultObservers =  ['ec' => DataLayerEc::class];
+    private $_defaultObservers =  ['ec' => ['class' => DataLayerEc::class]];
 
     private $_dataLayer = [];
 
@@ -100,7 +100,7 @@ class DataLayer extends Component implements \ArrayAccess
 
     public function renderEvent()
     {
-        \Yii::$app->view->registerJs($this->_getJS(), View::POS_HEAD, 'dataLayer');
+        Yii::$app->view->registerJs($this->_getJS(), View::POS_HEAD, 'dataLayer');
     }
 
     /**
@@ -148,8 +148,11 @@ class DataLayer extends Component implements \ArrayAccess
         {
             if(empty($this->_observedObjects[$name]))
             {
-                if(class_exists($this->observers[$name]))
-                    $this->_observedObjects[$name] = new $this->observers[$name]($this);
+                if(isset($this->observers[$name], $this->observers[$name]['class'])
+                    && class_exists($this->observers[$name]['class'])) {
+                    $options =  $this->observers[$name]['class']['options'] ?? [];
+                    $this->_observedObjects[$name] = new $this->observers[$name]($this, $options);
+                }
             }
 
             return $this->_observedObjects[$name];
