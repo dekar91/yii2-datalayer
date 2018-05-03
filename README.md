@@ -4,7 +4,7 @@ This extension is managed to help you fulfill dataLayer variable with initial da
 Some Google enhanced e-commerce features are also available.
 
 ## Installation
-* The minimum required PHP version of Yii is PHP 7.1,
+* The minimum required PHP version is PHP 7.1,
 * [Yii2](https://www.yiiframework.com/) is required.
 ### Using composer
 Add following line in your require section:
