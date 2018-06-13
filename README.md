@@ -1,3 +1,9 @@
+[![Latest Stable Version](https://poser.pugx.org/dekar91/yii2-datalayer/v/stable)](https://packagist.org/packages/dekar91/yii2-datalayer)
+[![License](https://poser.pugx.org/dekar91/yii2-datalayer/license)](https://packagist.org/packages/dekar91/yii2-datalayer)
+[![Total Downloads](https://poser.pugx.org/dekar91/yii2-datalayer/downloads)](https://packagist.org/packages/dekar91/yii2-datalayer)
+[![Build Status](https://travis-ci.org/dekar91/yii2-datalayer.svg?branch=master)](https://travis-ci.org/dekar91/yii2-datalayer)
+
+
 # Yii2 DataLayer helper
 
 This extension is managed to help you fulfill dataLayer variable with initial data on fly.
