@@ -11,7 +11,7 @@ settings:
 modules:
     config:
         Yii2:
-            configFile: 'config/test.php'
+            configFile: 'tests/_config/app.php'
             cleanup: false
 
 # To enable code coverage:

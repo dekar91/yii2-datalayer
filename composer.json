@@ -19,7 +19,8 @@
   "minimum-stability": "dev",
   "require": {
     "php": ">=7.1",
-    "yiisoft/yii2": "~2.0.0"
+    "yiisoft/yii2": ">=2.0",
+    "ezyang/htmlpurifier": "*"
   },
   "require-dev": {
     "yiisoft/yii2-debug": "~2.0.0",
