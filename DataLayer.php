@@ -51,7 +51,7 @@ class DataLayer extends Component implements \ArrayAccess
 
     public function offsetExists($offset)
     {
-       return isset($this->_dataLayer[$offset]);
+        return isset($this->_dataLayer[$offset]);
     }
 
     public function offsetGet($offset)
@@ -79,15 +79,18 @@ class DataLayer extends Component implements \ArrayAccess
      * @param array $data
      * @param string |null $key
      */
-    public function push(array $data, string $key = null) {
-        if($key)
-            $this->_dataLayer[$key] = isset($this->_dataLayer[$key])
-                ? $this->_dataLayer[$key] + $data
-                : $data;
-        else
-            array_push($this->_dataLayer, $data);
+    public function push(array $data, string $key = null)
+    {
+        if($data){
+            if($key)
+                $this->_dataLayer[$key] = isset($this->_dataLayer[$key])
+                    ? $this->_dataLayer[$key] + $data
+                    : $data;
+            else
+                array_push($this->_dataLayer, $data);
 
-        $this->trigger(self::EVENT_CHANGED);
+            $this->trigger(self::EVENT_CHANGED);
+        }
     }
 
     /**
@@ -95,7 +98,8 @@ class DataLayer extends Component implements \ArrayAccess
      */
     private function _getJS()
     {
-        return ' dataLayer = '.json_encode(array_values($this->_dataLayer), JSON_UNESCAPED_UNICODE).'; ';
+        return 'window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push(...'.json_encode(array_values($this->_dataLayer), JSON_UNESCAPED_UNICODE).');';
     }
 
     public function renderEvent()
