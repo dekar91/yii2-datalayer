@@ -18,26 +18,36 @@
   },
   "minimum-stability": "dev",
   "require": {
-    "php": ">=7.1",
+    "php": ">=7.4",
     "yiisoft/yii2": ">=2.0",
-    "ezyang/htmlpurifier": "*"
+    "ezyang/htmlpurifier": "*",
+    "bower-asset/inputmask":" ~3.3.5"
   },
   "require-dev": {
-    "yiisoft/yii2-debug": "~2.0.0",
-    "yiisoft/yii2-faker": "~2.0.0",
-    "codeception/base": "^2.2.3",
-    "codeception/verify": "~0.3.1",
-    "codeception/specify": "~0.4.3"
+    "yiisoft/yii2-debug": "~2.1.19",
+    "yiisoft/yii2-faker": "~2.0.5",
+    "codeception/codeception": "4.1.31",
+    "codeception/verify": "~2.2.0",
+    "codeception/specify": "~2.0.0"
   },
   "config": {
     "process-timeout": 1800,
     "fxp-asset": {
       "enabled": false
+    },
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true
     }
   },
   "autoload": {
     "psr-4": {
       "dekar91\\datalayer\\": ""
     }
-  }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ]
 }
