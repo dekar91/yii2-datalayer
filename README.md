@@ -13,7 +13,7 @@ Some Google enhanced e-commerce features are also available.
 * The minimum required PHP version is PHP 7.1,
 * [Yii2](https://www.yiiframework.com/) is required.
 ### Using composer
-Add following line in your require section:
+Add following line in your required section:
 ```
 "dekar91/yii2-datalayer": "@stable"
 
