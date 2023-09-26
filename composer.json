@@ -19,8 +19,8 @@
   "minimum-stability": "dev",
   "require": {
     "php": ">=7.4",
-    "yiisoft/yii2": ">=2.0",
-    "ezyang/htmlpurifier": "*",
+    "yiisoft/yii2": "~2.0",
+    "ezyang/htmlpurifier": "~4.16.0",
     "bower-asset/inputmask":" ~3.3.5"
   },
   "require-dev": {
