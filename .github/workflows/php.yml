@@ -31,7 +31,7 @@ jobs:
         run: composer install --prefer-dist --no-progress
 
       - name: Install assets plugin
-        run: composer global require fxp/composer-asset-plugin:^1.0.0
+        run: composer global require fxp/composer-asset-plugin:^2.3.0
 
       - name: Run tests
         run: composer run-script test
