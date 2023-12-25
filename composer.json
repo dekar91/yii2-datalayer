@@ -21,7 +21,7 @@
     "php": ">=7.4",
     "yiisoft/yii2": ">=2.0",
     "ezyang/htmlpurifier": "*",
-    "bower-asset/inputmask":" ~3.3.5"
+    "bower-asset/inputmask":" ~5.0.9-beta"
   },
   "require-dev": {
     "yiisoft/yii2-debug": "~2.1.19",

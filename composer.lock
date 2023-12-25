@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "23eb8a3dd7691249f64fe8868dfb18db",
+    "content-hash": "80d466241af11a8fde2764e8f8a2e05c",
     "packages": [
         {
             "name": "bower-asset/inputmask",
-            "version": "3.3.11",
+            "version": "5.0.9-beta.45",
             "source": {
                 "type": "git",
-                "url": "git@github.com:RobinHerbots/Inputmask.git",
-                "reference": "5e670ad62f50c738388d4dcec78d2888505ad77b"
+                "url": "https://github.com/RobinHerbots/Inputmask.git",
+                "reference": "dd09cb84ff99060e6b540c0dc8061837c6e54eb4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RobinHerbots/Inputmask/zipball/5e670ad62f50c738388d4dcec78d2888505ad77b",
-                "reference": "5e670ad62f50c738388d4dcec78d2888505ad77b"
+                "url": "https://api.github.com/repos/RobinHerbots/Inputmask/zipball/dd09cb84ff99060e6b540c0dc8061837c6e54eb4",
+                "reference": "dd09cb84ff99060e6b540c0dc8061837c6e54eb4"
             },
             "require": {
                 "bower-asset/jquery": ">=1.7"
@@ -29,16 +29,16 @@
         },
         {
             "name": "bower-asset/jquery",
-            "version": "3.6.4",
+            "version": "3.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jquery/jquery-dist.git",
-                "reference": "91ef2d8836342875f2519b5815197ea0f23613cf"
+                "reference": "fde1f76e2799dd877c176abde0ec836553246991"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/91ef2d8836342875f2519b5815197ea0f23613cf",
-                "reference": "91ef2d8836342875f2519b5815197ea0f23613cf"
+                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/fde1f76e2799dd877c176abde0ec836553246991",
+                "reference": "fde1f76e2799dd877c176abde0ec836553246991"
             },
             "type": "bower-asset",
             "license": [
@@ -4416,5 +4416,5 @@
         "php": ">=7.4"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
